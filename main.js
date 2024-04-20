@@ -2,7 +2,7 @@ const quiz = [
  {
  question: 'Q1. わが国の死因順位の第1位は悪性新生物（がん）である。',
  choices: [
- '〇',
+ '-〇-',
  '✕',
  ],
  correct: '〇'
