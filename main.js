@@ -825,8 +825,7 @@ const clickHandler = (e) => {
    window.alert("正解！");
    score++;
  } else {
-
-   window.alert("不正解！:" + quizindex);
+   window.alert("不正解！:");
  }
  
  quizIndex++;
