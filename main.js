@@ -88,7 +88,7 @@ const quiz = [
   correct: '✕'
   },
   {
-  question: 'Q12. 体外診断用医薬品の新しい品日（新規品目）については、承認後しばらくはクラス1の品目として取り扱われる。',
+  question: 'Q12. 体外診断用医薬品の新しい品日（新規品目）については、承認後しはらくはクラス1の品目として取り扱われる。',
   choices: [
   '〇',
   '✕',
@@ -837,7 +837,7 @@ const quiz = [
      setupQuiz();
   } else {
    window.alert('終了！あなたの正解数は' + score + '/' + quizLength + 'です！');
-   document.write("<h1>間違えた問題</h1>");
+   document.write("<h1>間違えた問題("+missIndex+")</h1>");
    let cnt=0;
    while(cnt<missIndex){
      document.write(quiz[miss[cnt]].question+"<br><br>");
