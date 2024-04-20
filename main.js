@@ -794,19 +794,19 @@ question: 'Q11. 医薬品医療機器等法の規制の対象になるのは、�
  },
 ]
 
-const quizLength = quiz.length; /*問題数*/
-let quizIndex = 0; /*問題番号*/
-let score = 0; /*スコア*/
+const quizLength = quiz.length;
+let quizIndex = 0;
+let score = 0;
  
 const button = document.getElementsByTagName('button');
 const buttonLength = button.length;
  
 const setupQuiz = () => {
- document.getElementById('question').textContent = quiz[quizIndex].question; /* questinoから問題を取得 */
- let buttonIndex = 0; /* ボタンを押した回数 */
- while(buttonIndex < buttonLength) {/* ボタンを押したか数が問題数に達するまでループ */
+ document.getElementById('question').textContent = quiz[quizIndex].question;
+ let buttonIndex = 0;
+ while(buttonIndex < buttonLength) {
 　　　　 button[buttonIndex].textContent = quiz[quizIndex].choices[buttonIndex];
-　　　　 buttonIndex++; /* ボタン押した回数加算 */
+　　　　 buttonIndex++;
  }
 }
  
