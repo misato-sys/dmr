@@ -812,7 +812,7 @@ const setupQuiz = () => {
  
 setupQuiz();
 
-ver miss=new Array();
+/*ver miss=new Array();*/
 /*let m_index=0;*/
 
 const clickHandler = (e) => {
