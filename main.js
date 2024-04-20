@@ -813,7 +813,7 @@ const setupQuiz = () => {
 setupQuiz();
 
 ver miss=new Array();
-let m_index=0;
+/*let m_index=0;*/
 
 const clickHandler = (e) => {
  if (quiz[quizIndex].correct === e.target.textContent) {
@@ -821,8 +821,8 @@ const clickHandler = (e) => {
    score++;
  } else {
    
-   miss[m_index]=quizIndex;
-   m_index++;
+   /*miss[m_index]=quizIndex;*/
+   /*m_index++;*/
    window.alert("不正解！:" + quizindex);
  }
  
