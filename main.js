@@ -828,7 +828,7 @@ const quiz = [
     score++;
   } else {
     miss[missIndex]=quizIndex;
-    window.alert("不正解！:"+missIndex);
+    window.alert("不正解！:"+(missIndex+1));
     missIndex++;
   }
   
