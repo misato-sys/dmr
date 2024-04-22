@@ -5,7 +5,8 @@ const quiz = [
   '〇',
   '✕',
   ],
-  correct: '〇'
+  correct: '〇',
+  memo: 'aaa'
   },
   {
   question: 'Q2. もっとも早くから自動化が進んだ検査分野は、免疫学的検査である。',
@@ -576,12 +577,12 @@ const quiz = [
   correct: '〇'
   },
   {
-  question: 'Q73. 肝臓に入る血管には、固有肝動脈と門所がある。',
+  question: 'Q73. 肝臓に入る血管には、固有肝動脈と門脈がある。',
   choices: [
   '〇',
   '✕',
   ],
-  correct: '✕'
+  correct: '〇'
   },
   {
   question: 'Q74. 甲状腺ホルモンの分泌は、上皮小体（副甲状腺）一甲状腺系によって調整される。',
@@ -828,7 +829,7 @@ const quiz = [
     score++;
   } else {
     miss[missIndex]=quizIndex;
-    window.alert("不正解！:"+(missIndex+1));
+    window.alert("不正解！: "+(missIndex+1));
     missIndex++;
   }
   
@@ -844,7 +845,7 @@ const quiz = [
      cnt++;
    }
   }
-
+  /*document.write("memo:"+quiz[0].memo)*/
  }
   
  let handlerIndex = 0;
